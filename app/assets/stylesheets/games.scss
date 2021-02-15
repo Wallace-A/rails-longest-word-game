@@ -1,0 +1,26 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h2 {
+  
+}
+.container-header {
+  width: 900px;
+  margin:auto;
+  text-align: center;
+}
+
+.container-grid {
+  display: flex;
+  width: 900px;
+  margin:auto;
+  justify-content: center;
+}
+.container-letter {
+  background-color: rgb(43, 132, 248);
+  height: 64px;
+  width: 64px;
+  margin: 8px;
+  text-align:center;
+}

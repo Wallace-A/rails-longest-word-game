@@ -1,0 +1,15 @@
+
+<div class="container-grid">
+  <% @letters.each do |l| %>
+    <div class="container-letter">
+      <h2> <%= l %> </h2>
+    </div>
+  <% end %>
+</div>
+<h3>What is the longest word you can find from these sweet sweet letters?</h3>
+<form action="/score" method="post">
+  <input type="text" name="word">
+  <input type="submit" value="Submit!">
+  <%= hidden_field_tag :letters, @letters %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
